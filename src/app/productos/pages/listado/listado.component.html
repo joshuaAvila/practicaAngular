@@ -1,0 +1,40 @@
+
+
+
+<!-- <h1 >Productos</h1>
+<div class="row row-cols-1 row-cols-md-2 g-4  ml-3">
+  <div class="col">
+    <div class="card">
+      <img src="/assets/img/Dell.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Laptop Dell</h5>
+        <p class="card-text">Full HD 4K</p>
+      </div>
+    </div>
+  </div>
+  </div> -->
+  
+<div class="container-fluid justify-content-center">
+  <div class="row col">
+    <h1 class=" d-flex justify-content-center">Tabla de Productos</h1>
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <th>id</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of lista; let i=index">
+          <td>{{ i }}</td>
+          <td>{{ producto.name }}</td>
+          <td>{{ producto.description }}</td>
+          <td>{{ producto.precio }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

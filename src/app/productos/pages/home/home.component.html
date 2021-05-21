@@ -1,0 +1,51 @@
+
+       <ul class="nav justify-content-end ">
+
+            <li class="nav-item">
+              <button 
+              routerLink=""
+              class="btn btn-outline-primary">
+                Inicio 
+              </button>
+            </li>
+
+              <li class="nav-item ">
+                <button (click)="logout()"
+                class="btn btn-outline-primary">
+                  Salir  
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <button class="btn btn-outline-primary disabled">
+                   {{ usuario.name | titlecase}} 
+                </button>
+              </li>
+          </ul> 
+          
+       
+
+
+    <!-- <app-header [sesion]="session"></app-header>  -->
+
+
+
+    <div class="row container-fluid mt-5 ">
+
+        <!-- <app-sidebar class="col-3"></app-sidebar>  -->
+        <div class="d-flex justify-content-md-start">
+          <button 
+          (click)="agregar()"
+          class="btn btn-outline-primary">
+            Agregar Productos
+          </button>
+        </div>
+        
+        <router-outlet></router-outlet>
+       
+
+        <app-listado></app-listado>
+
+    </div>
+
+   
